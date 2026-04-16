@@ -1,4 +1,4 @@
-ATLAS v1.2 — Clinical AI for Early Patient Deterioration
+# ATLAS v1.2 — Clinical AI System for Early ICU Deterioration Detection
 
 Overview
 
