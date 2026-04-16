@@ -1,30 +1,77 @@
-# ATLAS v1.2
+ATLAS v1.2 — Clinical AI for Early Patient Deterioration
 
-Clinical Early Deterioration Detection System
+Overview
 
-## Overview
-ATLAS is a rule-based clinical decision support tool that evaluates patient vital signs and detects early signs of deterioration.
+ATLAS is a clinical AI prototype designed to predict early signs of patient deterioration in ICU settings.
 
-## Features
-- Risk scoring (Low / Moderate / High)
-- Shock Index calculation
-- Clinical interpretation
-- Suggested labs and management plan
-- Trend analysis between patient visits
-- Patient logging system
-- Dashboard summary
+This system is built from a clinician’s perspective, focusing on real-world applicability rather than theoretical performance.
 
-## How to Run
-1. Install requirements:
-pip install -r requirements.txt
+---
 
-2. Run the app:
-streamlit run app/atlas_app.py
+Clinical Motivation
 
-## Tech Stack
-- Python
-- Streamlit
-- Pandas
+In ICU environments, early detection of deterioration is critical for improving patient outcomes.
 
-## Version
-v1.2 (Stable)
+ATLAS aims to:
+
+- Identify high-risk patients early
+- Support clinical decision-making
+- Provide interpretable risk signals
+
+---
+
+Features Used
+
+- Heart Rate (HR)
+- Systolic Blood Pressure (SBP)
+- Shock Index
+- Oxygen Saturation (SpO₂)
+- Derived clinical features
+
+---
+
+Models Implemented
+
+- Logistic Regression (baseline, interpretable)
+- Random Forest (non-linear model)
+
+---
+
+Key Learnings
+
+- Avoided data leakage (critical in clinical AI)
+- Focused on clinically meaningful features
+- Built a structured pipeline from raw data to prediction
+
+---
+
+Project Structure
+
+ATLAS/
+├── app/
+├── notebooks/
+├── src/
+├── requirements.txt
+├── README.md
+
+---
+
+Version
+
+Current version: v1.2 — Initial Clinical Risk System
+
+---
+
+Author
+
+Majed Hamad
+Medical Doctor transitioning into Clinical AI
+
+---
+
+Future Work
+
+- Add time-series features (trend analysis)
+- Improve model calibration
+- Integrate real clinical workflows
+- Expand to full MIMIC-IV dataset
