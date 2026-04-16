@@ -8,6 +8,17 @@ This system is built from a clinician’s perspective, focusing on real-world ap
 
 ---
 
+## 🧠 Example Output (Single Patient)
+
+![Example Patient Output](example-patient-output.png)
+
+---
+
+## 📊 Clinical Risk Type Distribution
+
+![Clinical Risk Distribution](clinical-risk-type-distribution.png)
+
+---
 Clinical Motivation
 
 In ICU environments, early detection of deterioration is critical for improving patient outcomes.
