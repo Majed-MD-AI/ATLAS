@@ -1,0 +1,16 @@
+def icu_risk_level(x):
+    if x == 1:
+        return "Low"
+    elif x <= 2:
+        return "Medium"
+    else:
+        return "High"
+
+
+def icu_time_risk(x):
+    if x < 24:
+        return "Short"
+    elif x < 72:
+        return "Medium"
+    else:
+        return "Long"
